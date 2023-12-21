@@ -9,24 +9,19 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class LoginPage {
 
-    /**
-     * The WebDriver instance for interacting with the web browser.
-     */
-    private WebDriver driver;
-
-    /**
+    /*
      * WebElement representing the username input field.
      */
     @FindBy(id="user-name")
     private WebElement userName;
 
-    /**
+    /*
      * WebElement representing the password input field.
      */
     @FindBy(id="password")
     private WebElement password;
 
-    /**
+    /*
      * WebElement representing the submit button for login.
      */
     @FindBy(id="login-button")
@@ -37,7 +32,9 @@ public class LoginPage {
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */
     public LoginPage(WebDriver driver){
-        this.driver = driver;
+        /*
+         * The WebDriver instance for interacting with the web browser.
+         */
         PageFactory.initElements(driver, this);
     }
 
