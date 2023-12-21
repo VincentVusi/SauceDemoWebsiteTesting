@@ -13,29 +13,33 @@ Prerequisites
 Before running the code, make sure you have the following installed:
 
 Java Development Kit (JDK)
-WebDriver executable ChromeDriver compatible with chrome browser
-Getting Started
+Selenium 4
+latest version of testng as of 21 December 2023
+
 Clone this repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/selenium-webdriver-example.git
+
+ git clone https://github.com/VincentVusi/SauceDemoWebsiteTesting.git
 Navigate to the project directory:
 
 bash
 Copy code
-cd selenium-webdriver-example
-Open the project in your preferred Java IDE.
 
-Download the WebDriver executable for your browser and update the path in the code accordingly.
+ cd SauceDemoWebsiteTesting
+ 
+Open the project in your preferred Java IDE.
 
 Run the main class or individual test classes to execute the Selenium WebDriver automation.
 
 Usage
 Feel free to use, modify, and extend this example for your own Selenium WebDriver projects. Each class has methods for specific interactions with web elements, making it easy to integrate into your testing framework.
 
-Contributing
-If you'd like to contribute to this project, please follow the standard GitHub fork and pull request workflow.
+Screenshort of the website used in this example
+
+![image](https://github.com/VincentVusi/SauceDemoWebsiteTesting/assets/153896296/7c07a053-0c78-4e73-9596-d7873912e0fe)
+
 
 License
 This project is licensed under the MIT License.
