@@ -46,7 +46,7 @@ Run the main class or individual test classes to execute the Selenium WebDriver 
 #### Usage
 Feel free to use, modify, and extend this example for your own Selenium WebDriver projects. Each class has methods for specific interactions with web elements, making it easy to integrate into your testing framework.
 
-### Screenshort of the website used in this example
+### Screenshort of the website used in this example `https://www.saucedemo.com/`
 
 ![image](https://github.com/VincentVusi/SauceDemoWebsiteTesting/assets/153896296/7c07a053-0c78-4e73-9596-d7873912e0fe)
 
