@@ -31,17 +31,13 @@ latest version of TestNG as of 21 December 2023
 
 ##### BASH : 
 
-Copy code
-
-'git clone https://github.com/VincentVusi/SauceDemoWebsiteTesting.git'
+Copy  `git clone https://github.com/VincentVusi/SauceDemoWebsiteTesting.git`
  
 Navigate to the project directory:
 
 ##### BASH :
 
-Copy code
-
- 'cd SauceDemoWebsiteTesting'
+Copy  `cd SauceDemoWebsiteTesting`
  
 #### Open the project in your preferred Java IDE.
 
@@ -54,7 +50,12 @@ Feel free to use, modify, and extend this example for your own Selenium WebDrive
 
 ![image](https://github.com/VincentVusi/SauceDemoWebsiteTesting/assets/153896296/7c07a053-0c78-4e73-9596-d7873912e0fe)
 
+### Java docs
+##### Find java docs for the project on a folder written ` java docs `
 
-License
+<img width="960" alt="Screenshot 2023-12-21 120433" src="https://github.com/VincentVusi/SauceDemoWebsiteTesting/assets/153896296/75d920f2-ed1e-4f73-94d4-aa2feec83478">
+
+
+##### License
 This project is licensed under the MIT License.
  
