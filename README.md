@@ -1,5 +1,5 @@
 # SauceDemoWebsiteTesting
-## Selenium WebDriver Example
+## Selenium 4 WebDriver Example
 
 ### Overview
 
