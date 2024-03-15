@@ -69,5 +69,6 @@ public class LoginPage {
     public void enterCredentials(String strUserName,String strPassword){
         this.enterUsername(strUserName);
         this.enterPassword(strPassword);
+        clickSubmit();
     }
 }

@@ -1,7 +1,11 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The InventoryPage class represents the page displaying items for sale.
@@ -12,14 +16,14 @@ public class InventoryPage {
     /*
      * WebElement representing the "View Cart" link.
      */
-    @FindBy(id = "shopping_cart_link")
+    @FindBy(className = "shopping_cart_link")
     private WebElement viewCart;
 
     /*
      * WebElement representing the "Add to Cart" button for a specific item (e.g., Sauce Labs Backpack).
      */
-    @FindBy(xpath = "//*[@id=\"add-to-cart-sauce-labs-backpack\"]")
-    private WebElement add_bag_to_cart;
+    @FindBy(className = "inventory_item")
+    private List<WebElement> productElement;
 
     /*
      * WebElement representing the link to the inventory link on the sidebar.
@@ -54,18 +58,21 @@ public class InventoryPage {
         PageFactory.initElements(driver, this);
     }
 
+    public List<Product> getProducts(){
+        List<Product> products = new ArrayList<>();
+        for (WebElement element:productElement) {
+            products.add(new Product(element));
+        }
+
+        return products;
+    }
+
+
     /**
      * Clicks the "View Cart" link to navigate to the shopping cart page.
      */
     public void clickViewCart() {
         viewCart.click();
-    }
-
-    /**
-     * Clicks the "Add to Cart" button for a specific item (e.g., Sauce Labs Backpack)
-     */
-    public void addBagToCart() {
-        add_bag_to_cart.click();
     }
 
     /**

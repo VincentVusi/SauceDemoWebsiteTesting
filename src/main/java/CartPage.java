@@ -1,7 +1,11 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The CartPage class represents the shopping cart page.
@@ -10,10 +14,11 @@ import org.openqa.selenium.support.PageFactory;
 public class CartPage {
 
     /**
-     * WebElement representing the remove item button in the cart.
+     * WebElement representing all the products in the cart
      */
-    @FindBy(id = "remove-sauce-labs-backpack")
-    private WebElement remove_item;
+
+    @FindBy(className = "cart_item")
+    private List<WebElement> cartElements;
 
     /**
      * WebElement representing the checkout button in the cart.
@@ -27,15 +32,16 @@ public class CartPage {
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */
     public CartPage(WebDriver driver) {
-
         PageFactory.initElements(driver, this);
     }
 
-    /**
-     * Clicks the remove item button to remove an item from the cart.
-     */
-    public void removeItemFromCart() {
-        remove_item.click();
+    public List<Product> getCartProducts(){
+        List<Product> products = new ArrayList<>();
+        for (WebElement element:cartElements) {
+            products.add(new Product(element));
+        }
+
+        return products;
     }
 
     /**
@@ -44,4 +50,5 @@ public class CartPage {
     public void proceedToCheckout() {
         checkout.click();
     }
+
 }
