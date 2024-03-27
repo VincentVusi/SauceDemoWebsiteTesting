@@ -1,10 +1,12 @@
+package webpages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 /**
- * The CheckoutStepTwoPage class represents the second step of the checkout process.
+ * The webpages.CheckoutStepTwoPage class represents the second step of the checkout process.
  * It contains methods to complete the checkout process.
  */
 public class CheckoutStepTwoPage {
@@ -16,7 +18,7 @@ public class CheckoutStepTwoPage {
     private WebElement finish;
 
     /**
-     * Constructor to initialize the CheckoutStepTwoPage with the WebDriver.
+     * Constructor to initialize the webpages.CheckoutStepTwoPage with the WebDriver.
      *
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */

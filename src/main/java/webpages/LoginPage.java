@@ -1,10 +1,12 @@
+package webpages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 /**
- * LoginPage class for the website https://www.saucedemo.com/
- * The LoginPage class represents the page where users can log in.
+ * webpages.LoginPage class for the website https://www.saucedemo.com/
+ * The webpages.LoginPage class represents the page where users can log in.
  * It contains methods to interact with the login form elements.
  */
 public class LoginPage {
@@ -28,7 +30,7 @@ public class LoginPage {
     private WebElement submit;
 
     /**
-     * Constructor to initialize the LoginPage with the WebDriver.
+     * Constructor to initialize the webpages.LoginPage with the WebDriver.
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */
     public LoginPage(WebDriver driver){
@@ -69,6 +71,5 @@ public class LoginPage {
     public void enterCredentials(String strUserName,String strPassword){
         this.enterUsername(strUserName);
         this.enterPassword(strPassword);
-        clickSubmit();
     }
 }

@@ -1,14 +1,15 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import webpages.CartPage;
+import webpages.InventoryPage;
+import webpages.LoginPage;
+import webpages.Product;
 
-import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -33,16 +34,17 @@ public class BaseTest {
         for (int i = 0 ; i < products.size();i+=2){
             products.get(i).clickCardButton();
         }
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         products.get(2).clickCardButton();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         inventoryPage.clickViewCart();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         CartPage cartPage = new CartPage(driver);
         List<Product> cartProducts = cartPage.getCartProducts();
         cartProducts.get(1).clickCardButton();
-        Thread.sleep(5000);
-
+        Thread.sleep(2000);
+        cartPage.proceedToCheckout();
+        Thread.sleep(2000);
 
     }
 

@@ -1,4 +1,5 @@
-import org.openqa.selenium.By;
+package webpages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The CartPage class represents the shopping cart page.
+ * The webpages.CartPage class represents the shopping cart page.
  * It contains methods to interact with the cart items and proceed to checkout.
  */
 public class CartPage {
@@ -27,7 +28,7 @@ public class CartPage {
     private WebElement checkout;
 
     /**
-     * Constructor to initialize the CartPage with the WebDriver.
+     * Constructor to initialize the webpages.CartPage with the WebDriver.
      *
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */

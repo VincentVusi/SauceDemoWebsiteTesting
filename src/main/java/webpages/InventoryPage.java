@@ -1,4 +1,5 @@
-import org.openqa.selenium.By;
+package webpages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The InventoryPage class represents the page displaying items for sale.
+ * The webpages.InventoryPage class represents the page displaying items for sale.
  * It contains methods to interact with various elements on the page.
  */
 public class InventoryPage {
@@ -50,7 +51,7 @@ public class InventoryPage {
     private WebElement reset_link;
 
     /**
-     * Constructor to initialize the InventoryPage with the WebDriver.
+     * Constructor to initialize the webpages.InventoryPage with the WebDriver.
      *
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */

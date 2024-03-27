@@ -1,10 +1,12 @@
+package webpages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 /**
- * The CheckoutStepOnePage class represents the first step of the checkout process.
+ * The webpages.CheckoutStepOnePage class represents the first step of the checkout process.
  * It contains methods to enter user information for checkout.
  */
 public class CheckoutStepOnePage {
@@ -34,7 +36,7 @@ public class CheckoutStepOnePage {
     private WebElement continueButton;
 
     /**
-     * Constructor to initialize the CheckoutStepOnePage with the WebDriver.
+     * Constructor to initialize the webpages.CheckoutStepOnePage with the WebDriver.
      *
      * @param driver The WebDriver instance to use for interacting with the web browser.
      */
