@@ -18,9 +18,9 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1080");
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.saucedemo.com/");
 
     }
